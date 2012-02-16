@@ -31,6 +31,60 @@ li a.active {
 #secondary-menu {
 }
 
+/* Begin Menu 2nd level */
+#subnav {
+  height: 3em;
+  border-bottom: 2px solid;
+  border-color: #A10F15;
+  margin: 0px;
+  padding-bottom: 10px;
+}
+
+.level2-links {
+  font-weight: bold;
+  height: 3em;
+  margin: 0;
+  padding: 0;
+}
+
+.level2-links .Block-body,
+.level2-links .BlockContent,
+.level2-links .BlockContent-body {
+  height: 0px;
+  margin: 0;
+  padding: 0;
+}
+
+.level2-links li {
+  display: inline;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.level2-links li.last {
+   border-right: none;
+}
+
+.level2-links li a {
+  display: block;
+  line-height: 2.5em;
+  padding: 0 1em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.level2-links li a:hover,
+.level2-links li a:focus {
+  text-decoration: none;
+  background-color: #A10F15;
+  color: #fff;
+  border-bottom: none;
+}
+
+
 /*
  * Menu blocks
  */
