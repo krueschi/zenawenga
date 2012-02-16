@@ -156,6 +156,20 @@ li a.active {
 .block-menu {
 }
 
+/* User Menus System */
+
+a:link {
+	text-decoration:none;}
+
+a:visited {
+	text-decoration:none;}
+a:hover {
+	text-decoration:none;
+	border-bottom: 1px dotted #a10f15;
+	color: #a10f15;}
+
+/* End User Menus System */
+
 /*
  * "Menu block" blocks. See http://drupal.org/project/menu_block
  */
