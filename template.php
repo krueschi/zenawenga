@@ -60,22 +60,7 @@
  *   and http://drupal.org/node/190815#template-suggestions
  */
 
-/**
- * Generate the HTML output for a single local task link.
- *
- * @ingroup themeable
- */
-function ht16zen_menu_local_task($link, $active = FALSE) {
-  $output = preg_replace('~<a href="([^"]*)"[^>]*>([^<]*)</a>~',
-  '<a href="$1" class="Button">'
-  .'<span class="btn">'
-  .'<span class="l"></span>'
-  .'<span class="r"></span>'
-  .'<span class="t">$2</span>'
-  .'</span>'
-  .'</a>', $link);
-  return $output;
-}
+
 
 /**
  * Implementation of HOOK_theme().
