@@ -55,6 +55,10 @@ body {
  * Header
  */
 #header {
+  margin: 0 auto;
+	position: relative;
+	z-index:0;
+	/* height: 140px; */
 }
 
 #header .section {
@@ -62,8 +66,10 @@ body {
 
 #logo /* Wrapping link for logo */ {
   float: left; /* LTR */
-  margin: 0;
+  margin-left: 10px;
+  margin-top: 3px;
   padding: 0;
+  display : block;
 }
 
 #logo img {
@@ -92,6 +98,14 @@ div#site-name /* The name of the website */ {
 }
 
 #site-slogan /* The slogan (or tagline) of a website */ {
+  font-size:24px;
+	font-style:italic;
+	font-weight:bold;
+	text-align:left;
+	position: absolute;
+	left: 185px;
+	bottom: 6px;
+	color:#999999;
 }
 
 .region-header /* Wrapper for any blocks placed in the header region */ {
