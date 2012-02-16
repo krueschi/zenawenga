@@ -60,11 +60,6 @@
  *   and http://drupal.org/node/190815#template-suggestions
  */
 
-
-function get_full_path_to_theme() {
-  return base_path().path_to_theme();
-}
-
 /**
  * Generate the HTML output for a single local task link.
  *

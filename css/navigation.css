@@ -21,10 +21,6 @@ li a.active {
   background-image: url(../images/nav/nav.png);
 }
 
-#navigation li {
-  padding-top: 6px;
-}
-
 #navigation .l {
 	left: 0;
 	right:0px;
@@ -67,6 +63,10 @@ li a.active {
 {
 	padding: 30px 30px 30px 10px;
 	margin: -30px 0 0 -10px;
+}
+
+#main-menu li {
+  padding-top: 6px;
 }
 
 #main-menu a {
@@ -158,12 +158,12 @@ li a.active {
 
 /* User Menus System */
 
-a:link {
+.block-menu a:link {
 	text-decoration:none;}
 
-a:visited {
+.block-menu a:visited {
 	text-decoration:none;}
-a:hover {
+.block-menu a:hover {
 	text-decoration:none;
 	border-bottom: 1px dotted #a10f15;
 	color: #a10f15;}

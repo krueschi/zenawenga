@@ -118,9 +118,12 @@
 </head>
 <body class="<?php print $classes; ?>">
 
+<?php /* ?>
   <?php if ($primary_links): ?>
     <div id="skip-link"><a href="#main-menu"><?php print t('Jump to Navigation'); ?></a></div>
   <?php endif; ?>
+  <?php */ ?>
+
   
   <div class="PageBackgroundSimpleGradient"></div>
   <div class="PageBackgroundGlare">
