@@ -210,7 +210,9 @@
 
       <?php if ($primary_links || $navigation): ?>
         <div id="navigation"><div class="section clearfix">
-
+          <div class="nav">
+              <div class="l"></div>
+              <div class="r"></div>
           <?php print theme(array('links__system_main_menu', 'links'), $primary_links,
             array(
               'id' => 'main-menu',
@@ -222,9 +224,9 @@
               'class' => 'element-invisible',
             ));
           ?>
-
+          
           <?php print $navigation; ?>
-
+          </div> <!-- /.nav -->
         </div></div><!-- /.section, /#navigation -->
       <?php endif; ?>
 
