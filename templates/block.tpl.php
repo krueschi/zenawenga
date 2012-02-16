@@ -55,7 +55,10 @@
 ?>
 <div id="<?php print $block_html_id; ?>" class="<?php print $classes; ?>">
 
-  <div class="Block <?php print block_class($block); ?>">
+  <!-- start block class module css -->
+  <?php /*
+  <div class="Block <?php print block_class($block); ?>">  */ ?>
+  <!-- end block class module css -->
   <div class="Block-tl"></div>
   <div class="Block-tr"></div>
   <div class="Block-bl"></div>
@@ -83,7 +86,7 @@
       </div>
     </div>
   </div>
-</div>
+
 
   <?php print $edit_links; ?>
 </div><!-- /.block -->
