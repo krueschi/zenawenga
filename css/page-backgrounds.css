@@ -59,7 +59,7 @@ html:first-child .PageBackgroundGlare
 	position:relative;
 	z-index:0;
 	margin:0 auto;
-	width: 960px;
+	width: 980px;
 	min-width:23px;
 	min-height:23px;
 	margin-top: -15px !important;
@@ -69,7 +69,7 @@ html:first-child .PageBackgroundGlare
 {
 	position: relative;
 	z-index:1;
-	padding: 15px;
+	padding: 10px;
 }
 
 .Sheet-tr, .Sheet-tl, .Sheet-br, .Sheet-bl, .Sheet-tc, .Sheet-bc,.Sheet-cr, .Sheet-cl
