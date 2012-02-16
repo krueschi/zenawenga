@@ -21,6 +21,10 @@ li a.active {
   background-image: url(../images/nav/nav.png);
 }
 
+#navigation li {
+  padding-top: 6px;
+}
+
 #navigation .l {
 	left: 0;
 	right:0px;
