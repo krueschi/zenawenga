@@ -342,3 +342,13 @@ ul.links li {
 #content-area a:hover {
   border-bottom: 1px dashed #a10f15;
 }
+
+
+#content-area .views-admin-links a {
+  text-decoration:none;
+  color: #999;
+}
+
+#content-area .views-admin-links a:hover {
+  border-bottom: 1px dotted #999;
+}
