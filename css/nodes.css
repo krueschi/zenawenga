@@ -46,7 +46,20 @@
 .node-type-story /* Story content node */ {
 }
 
-.node h2.title /* Node title */ {
+h1.title {
+  font-size:1.4em;
+  color:#a10f15;
+  text-align:center;
+}
+
+h2.title /* Node title */ {
+  font-size: 1.2em;
+  color:#a10f15;
+  margin-top: 1.2em;
+}
+
+h1.title a:hover, h2.title a:hover {
+  border-bottom: 1px dashed #a10f15;
 }
 
 .marker /* "New" or "Updated" marker for content that is new or updated for the current user */ {
@@ -65,9 +78,22 @@
 }
 
 .node .submitted /* The "posted by" information */ {
-	font-size:0.75em;
-	color: #999999;
+	font-size:0.825em;
+	color: #999;
 	margin-bottom: 1.5em;
+}
+
+#content-area .submitted a:link, 
+#content-area .submitted a:visited, 
+#content-area .submitted a:hover {
+  text-decoration:none;
+  color: #999;
+  border:none; 
+}
+
+#content-area .submitted a:hover {
+  border: none;
+  border-bottom: 1px dotted #999;
 }
 
 .node .terms /* Node terms (taxonomy) */ {

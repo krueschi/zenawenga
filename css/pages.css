@@ -340,8 +340,10 @@ ul.links li {
 
 #content-area a:link, 
 #content-area a:visited, 
-#content-area a:hover {
+#content-area a:hover,
+#content-area a:active {
   text-decoration:none;
+  border:none;
   color: #a10f15;
 }
 
