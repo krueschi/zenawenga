@@ -83,14 +83,20 @@ li a.active {
   text-decoration: none;
   background-color: #84100C;
   color: #fff;
-  border-bottom: none;
+  border: 0px solid #84100c;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
 }
 
 #main-menu li a.active {
   text-decoration: none;
-  background-color: #A10F15;
+  background-color: #a10f15;
   color: #fff;
-  border-bottom: none;
+  border: 0px solid #a10f15; 
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
 }
 
 #secondary-menu {
