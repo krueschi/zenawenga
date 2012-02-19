@@ -4,3 +4,22 @@
  */
 
 
+.view-content a:link {
+  color: #a10f15;
+  text-decoration: none;
+  border: none;
+}
+
+.view-content a:hover {
+  border-bottom: 1px dashed;
+}
+
+div.views-admin-links a:link {
+  background:none;
+  color: #999;
+}
+
+div.views-admin-links a:hover {
+  background:none;
+  color: #333;
+}

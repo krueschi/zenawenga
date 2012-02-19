@@ -23,3 +23,13 @@ div.block.with-block-editing div.edit {
 div.block.with-block-editing:hover div.edit {
   display: block;
 }
+
+div.edit a:link {
+  color: #999;
+  text-decoration: none;
+  border:none;
+}
+
+div.edit a:hover {
+  color: #333;
+}
