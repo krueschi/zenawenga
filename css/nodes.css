@@ -157,6 +157,7 @@ p {
 }
 
 #content-area table {
+  max-width: 99%;
   margin: 10px 5px;
 }
 
