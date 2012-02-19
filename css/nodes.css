@@ -155,3 +155,12 @@ p {
   margin-right: 10px;
   margin-bottom: 10px;
 }
+
+#content-area table {
+  margin: 10px 5px;
+}
+
+#content-area th {
+  padding: 2px 4px;
+}
+
