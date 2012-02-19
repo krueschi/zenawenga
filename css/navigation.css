@@ -202,3 +202,13 @@ li a.active {
  */
 .block-menu_block {
 }
+
+#content-area .pager a:link {
+  color: #666;
+  text-decoration: none;
+}
+
+#content-area .pager a:hover {
+  border:none;
+  font-style:italic;
+}
