@@ -153,7 +153,8 @@
   border: #a10f15 0px solid;
   border-radius: 3px;
   -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;  
+  -webkit-border-radius: 3px;
+  -khtml-border-radius: 3px;  
 }
 
 /* end Box, BlockContent */
