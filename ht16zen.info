@@ -61,6 +61,7 @@ scripts[] = js/script.js
 regions[sidebar_first]  = First sidebar
 regions[sidebar_second] = Second sidebar
 regions[navigation]     = Navigation bar
+regions[subnavigation]  = 2nd level navigation
 regions[highlight]      = Highlighted content
 regions[content_top]    = Content top
 regions[content_bottom] = Content bottom

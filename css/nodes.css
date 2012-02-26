@@ -50,6 +50,7 @@ h1.title {
   font-size:1.4em;
   color:#a10f15;
   text-align:center;
+  margin-top: 0.5em;
 }
 
 h2.title /* Node title */ {
