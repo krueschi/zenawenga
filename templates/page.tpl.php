@@ -185,6 +185,11 @@
           <div id="mission"><?php print $mission; ?></div>
         <?php endif; ?>
 
+        <?php if(!empty($subnavigation)): ?>
+          <div id="subnav">
+            <?php print $subnavigation; ?>
+          </div>
+        <?php endif; ?>
         <?php print $highlight; ?>
 
         <?php print $breadcrumb; ?>
