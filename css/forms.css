@@ -10,6 +10,11 @@
   margin: 1em 0;
 }
 
+.BlockContent .form-item,
+.BlockContent #edit-tid {
+  max-width: 170px;
+}
+
 .form-item input.error,
 .form-item textarea.error,
 .form-item select.error /* Highlight the form elements that caused a form submission error */ {
