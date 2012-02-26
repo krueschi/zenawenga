@@ -32,6 +32,9 @@ li a.active {
 	clip: rect(auto, auto, auto, 870px);
 }
 
+#navigation ul {
+  height:43px;
+}
 
 #navigation a {
   display: inline-block;
@@ -123,31 +126,26 @@ li a.active {
   border-bottom: #efefef dashed 1px;
 }
 
-/* Begin Menu 2nd level */
-#subnav {
+
+/*
+ * Menu blocks
+ */
+.block-menu {
+}
+
+/* Highlighted content area menus */
+
+.region-highlight #block-menu-menu-subnavigation {
+  width: 100%;
   height: 3em;
   border-bottom: 2px solid;
   border-color: #A10F15;
-  margin: 0px;
-  padding-bottom: 10px;
+  margin: -1em 0 0 0;
+  padding-bottom: 1em;
+  font-weight: bold;  
 }
 
-.level2-links {
-  font-weight: bold;
-  height: 3em;
-  margin: 0;
-  padding: 0;
-}
-
-.level2-links .Block-body,
-.level2-links .BlockContent,
-.level2-links .BlockContent-body {
-  height: 0px;
-  margin: 0;
-  padding: 0;
-}
-
-.level2-links li {
+.region-highlight #block-menu-menu-subnavigation li {
   display: inline;
   float: left;
   list-style: none;
@@ -156,11 +154,11 @@ li a.active {
   text-decoration: none;
 }
 
-.level2-links li.last {
+.region-highlight #block-menu-menu-subnavigation li.last {
    border-right: none;
 }
 
-.level2-links li a {
+.region-highlight #block-menu-menu-subnavigation li a {
   display: block;
   line-height: 2.5em;
   padding: 0 1em;
@@ -168,8 +166,8 @@ li a.active {
   white-space: nowrap;
 }
 
-.level2-links li a:hover,
-.level2-links li a:focus {
+.region-highlight #block-menu-menu-subnavigation li a:hover,
+.region-highlight #block-menu-menu-subnavigation li a:focus {
   text-decoration: none;
   background-color: #A10F15;
   color: #fff;
@@ -177,11 +175,8 @@ li a.active {
 }
 
 
-/*
- * Menu blocks
- */
-.block-menu {
-}
+/* End highlighted content area menus */
+
 
 /* User Menus System */
 

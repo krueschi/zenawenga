@@ -178,8 +178,8 @@
     </div></div><!-- /.section, /#header -->
 
     <div id="main-wrapper"><div id="main" class="clearfix<?php if ($primary_links || $navigation) { print ' with-navigation'; } ?>">
-
-      <div id="content" class="column"><div class="section">
+        
+        <div id="content" class="column"><div class="section">
 
         <?php if ($mission): ?>
           <div id="mission"><?php print $mission; ?></div>
@@ -208,14 +208,18 @@
         <?php if ($feed_icons): ?>
           <div class="feed-icons"><?php print $feed_icons; ?></div>
         <?php endif; ?>
+        
 
       </div></div><!-- /.section, /#content -->
 
+
       <?php if ($primary_links || $navigation): ?>
         <div id="navigation"><div class="section clearfix">
-          <div class="nav">
+
+          <div class="nav">                         
               <div class="l"></div>
               <div class="r"></div>
+              
           <?php print theme(array('links__system_main_menu', 'links'), $primary_links,
             array(
               'id' => 'main-menu',
@@ -228,14 +232,16 @@
             ));
           ?>
           
-          <?php print $navigation; ?>
+          <?php print $navigation; ?>                   
           </div> <!-- /.nav -->
+          
         </div></div><!-- /.section, /#navigation -->
       <?php endif; ?>
-
+     
+        
       <?php print $sidebar_first; ?>
-
-      <?php print $sidebar_second; ?>
+      
+      <?php print $sidebar_second; ?>        
 
     </div></div><!-- /#main, /#main-wrapper -->
 
