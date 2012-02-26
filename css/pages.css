@@ -358,3 +358,14 @@ ul.links li {
 #content-area .views-admin-links a:hover {
   border-bottom: 1px dotted #999;
 }
+
+#edit-body-wrapper a,
+#edit-body-wrapper a:link,
+#edit-body-wrapper a:visited,
+#edit-body-wrapper a:hover,
+#edit-body-wrapper a:focus,
+#edit-body-wrapper a:active {
+  text-decoration: none;
+  border: none;
+  color: #000;
+}
