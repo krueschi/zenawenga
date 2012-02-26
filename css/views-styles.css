@@ -41,3 +41,16 @@ div.views-admin-links a:hover {
 .views-view-grid td {
   vertical-align: top;
 }
+
+table.views-table {
+  font-size: 1em;
+}
+
+#content-area th.views-field a:hover {
+  border:none;
+}
+
+#content-area td.views-field,
+#content-area th.views-field {
+  padding: 0 0.5em;
+}
