@@ -3,6 +3,10 @@
  * Views Styling
  */
 
+#content-area .field-content {
+  font-size: 12px;
+}
+
 
 .view-content a:link {
   color: #a10f15;
@@ -22,4 +26,18 @@ div.views-admin-links a:link {
 div.views-admin-links a:hover {
   background:none;
   color: #333;
+}
+
+#content-area a.imagecache {
+  background: none;
+  text-decoration: none;
+  border: none;
+}
+
+#content-area .field-content a:hover {
+  text-decoration: none;
+}
+
+.views-view-grid td {
+  vertical-align: top;
 }
