@@ -166,3 +166,6 @@ p {
   padding: 2px 4px;
 }
 
+table.itu-attachment-list {
+  font-size: 1em;
+}
