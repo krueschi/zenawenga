@@ -50,8 +50,7 @@
 	margin-bottom: 7px;
 }
 
-.BlockHeader .t
-{
+.BlockHeader .t {
 	height: 30px;
 	color: #f7f7f7;
 	font-size: 14px;
@@ -216,3 +215,13 @@
 
 #block-user-3 /* "Who's online" block for a list of the online users */ {
 }
+
+/* OG BlockHeader */
+.block-og .BlockHeader a,
+.block-og_details .BlockHeader a {
+  text-decoration: none;
+  border: none;
+  color: #f7f7f7;
+}
+
+/* End OG BlockHeader */
