@@ -36,6 +36,9 @@ div.views-admin-links a:hover {
 
 #content-area .field-content a:hover {
   text-decoration: none;
+  background: none;
+  border: 0 0 1px 0 dashed;
+  padding: 0;
 }
 
 .views-view-grid td {
@@ -53,4 +56,7 @@ table.views-table {
 #content-area td.views-field,
 #content-area th.views-field {
   padding: 0.25em 0.5em;
+}
+
+.view-content a:hover {
 }
