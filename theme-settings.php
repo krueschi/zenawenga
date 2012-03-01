@@ -14,7 +14,7 @@ include_once './' . drupal_get_path('theme', 'zen') . '/theme-settings.php';
 function ht16zen_settings($saved_settings) {
 
   // Get the default values from the .info file.
-  $defaults = zen_theme_get_default_settings('ht16zen');
+  $defaults = ht16zen_theme_get_default_settings('ht16zen');
 
   // Merge the saved variables and their default values.
   $settings = array_merge($defaults, $saved_settings);
@@ -36,7 +36,7 @@ function ht16zen_settings($saved_settings) {
   $form += zen_settings($saved_settings, $defaults);
 
   // Remove some of the base theme's settings.
-  unset($form['themedev']['zen_layout']); // We don't need to select the base stylesheet.
+  unset($form['themedev']['ht16_layout']); // We don't need to select the base stylesheet.
 
   // Return the form
   return $form;
