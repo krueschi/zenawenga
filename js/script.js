@@ -90,7 +90,7 @@ var artLoadEvent = (function() {
     add: function(f) {
       list.push(f);
     }
-  })
+  });
 })();
 
 (function () {
