@@ -28,6 +28,9 @@
   </div>
 
   <div class="content">
+    <div class="floatleft">
+      <?php print $node->field_sportsimage[0]['view']; ?>
+    </div>
     <?php print $content ?>
   </div>
 
