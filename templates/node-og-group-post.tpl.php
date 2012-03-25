@@ -33,8 +33,17 @@
   <?php endif; ?>
 
   <div class="content">
-    <?php print $content; ?>
-  </div>
+      <div class="floatleft">
+      <?php print $node->field_newsimage[0]['view'] ?></div>
+      <?php print $content; ?></div>
+        <div style="clear:both"></div>
+      <?php unset($node->field_newsimage[0]); ?>
+      <div class="floatleft">
+      <?php if($page !=0 or !$teaser): ?>
+        <?php foreach ($node->field_newsimage as $otherimage=>$image) {
+          print"<div class='floatleft'>".$image['view']."</div>"; } ?>
+      <?php endif; ?></div>
+  <div style="clear:both"></div>
 
   <?php print $links; ?>
 </div><!-- /.node -->
