@@ -60,3 +60,8 @@ table.views-table {
 
 .view-content a:hover {
 }
+
+.view-content a:visited {
+  color: #A10F15;
+  text-decoration: none;
+}
