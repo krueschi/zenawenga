@@ -65,3 +65,7 @@ table.views-table {
   color: #A10F15;
   text-decoration: none;
 }
+
+.view-ansprechpartner .views-row-even {
+  margin-top: 1em;
+}
