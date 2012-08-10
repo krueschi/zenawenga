@@ -69,3 +69,7 @@ table.views-table {
 .view-ansprechpartner .views-row-even {
   margin-top: 1em;
 }
+
+.view-content table.views-table h3 {
+  text-align:left;
+}
