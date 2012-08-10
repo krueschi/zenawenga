@@ -169,3 +169,11 @@ p {
 table.itu-attachment-list {
   font-size: 1em;
 }
+
+.hinweis {
+	background-color: #FFFBD9;
+	border-color: #FFEB00;
+	border-style: solid;
+	border: 1px;
+	padding: 6px 12px;
+}
