@@ -154,3 +154,28 @@ function ht16zen_preprocess_block(&$vars, $hook) {
   $vars['sample_variable'] = t('Lorem ipsum.');
 }
 // */
+
+function my_groups_preprocess_node(&$variables) {
+    $node = $variables['node'];
+        
+    if (og_is_group_post($node->sportsnews)) {
+    array_unshift($variables['template_files'], 'node-sportsnews');    
+  }
+}
+
+function ht16zen_preprocess_node(&$variables) {
+  $node = $variables['node'];
+
+  if($node->type == 'og_static_page') {
+    if($node->field_other_template[0]['value'] == 0){
+    $variables['template_file'] = 'node-og-static-page1';
+    }
+  }
+  
+  if($node->type == 'sportsnews') {
+    if($node->field_other_template[0]['value'] == 0){
+    $variables['template_file'] = 'node-sportsnews1';
+    }
+  }
+}
+

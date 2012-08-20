@@ -37,7 +37,7 @@
         <div style="clear:both"></div>
       <div class="floatleft">
       <?php if($page !=0 or !$teaser): ?>
-        <?php foreach ($node->field_abt_image as $otherimage=>$image) {
+        <?php foreach ($node->field_newsimage as $otherimage=>$image) {
           print"<div class='floatleft'>".$image['view']."</div>"; } ?>
       <?php endif; ?></div>
   <div style="clear:both"></div>
