@@ -157,10 +157,14 @@ function ht16zen_preprocess_block(&$vars, $hook) {
 
 function my_groups_preprocess_node(&$variables) {
     $node = $variables['node'];
-        
+    
+    if (og_is_group_post($node->og_static_page)) {
+    array_unshift($variables['template_files'], 'node-og_static_page');
+      }
+    
     if (og_is_group_post($node->sportsnews)) {
     array_unshift($variables['template_files'], 'node-sportsnews');    
-  }
+      }
 }
 
 function ht16zen_preprocess_node(&$variables) {
@@ -168,7 +172,7 @@ function ht16zen_preprocess_node(&$variables) {
 
   if($node->type == 'og_static_page') {
     if($node->field_other_template[0]['value'] == 0){
-    $variables['template_file'] = 'node-og-static-page1';
+    $variables['template_file'] = 'node-og_static_page1';
     }
   }
   

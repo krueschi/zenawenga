@@ -1,7 +1,7 @@
   ; The name and description of the theme used on the admin/build/themes page.
 name        = HT16 Zen
 description = HT16 Theme as zen subtheme
-version = 6.x-1.0-beta3
+version = 6.x-1.0-rc1
 
   ; The screenshot used on the admin/build/themes page.
 screenshot = screenshot.png
