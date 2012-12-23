@@ -104,27 +104,57 @@ li a.active {
   -khtml-border-radius: 6px;
 }
 
-#secondary-menu {
+/*
+ * Secondary menu stylings
+ */
+
+#header-links {
+  float: right;
+  display: inline;
 }
 
-#secondary-menu ul,
-#secondary-menu li,
-#secondary-menu a,
-#secondary-menu a:link,
-#secondary-menu a:visited,
-#secondary-menu a:hover,
-#secondary-menu a:active {
+#header-links #secondary-menu ul,
+#header-links #secondary-menu li,
+#header-links #secondary-menu a,
+#header-links #secondary-menu a:link,
+#header-links #secondary-menu a:hover,
+#header-links #secondary-menu a:visited {
   display:inline;
-  margin:0px 20px 0 20px;
+  float:left;
+  margin:5px 5px 0px 0px;
   list-style:none;
-  font-size:15px;
-  text-decoration:none;
-  color:#efefef;
+  font-size:10px;
+  line-height: 10px;
+  color:#A10F15;   
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
-#secondary-menu a:hover {
-  border-bottom: #efefef dashed 1px;
+#header-links #secondary-menu a:hover {
+  text-shadow: #ababab 2px 2px 2px;
 }
+
+#header-links #secondary-menu li {
+  border-right: 1px solid #999999;
+}
+
+#header-links #secondary-menu li.last {
+  border-right: none;
+}
+
+.element-invisible {
+  position: absolute;
+  left: -5000em;
+}
+
+/*
+ * End secondary menu stylings
+ */
+
+/*
+ * End header stylings
+ */
+
 
 /* Begin Menu 2nd level */
 #subnav {
