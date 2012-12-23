@@ -94,14 +94,38 @@
       <?php print $header; ?>
 
     </div></div><!-- /.section, /#header -->
+    
 
+      
     <div id="main-wrapper"><div id="main" class="clearfix<?php if ($primary_links || $navigation) { print ' with-navigation'; } ?>">
-        
+            <?php if ($primary_links || $navigation): ?>
+        <div id="navigation"><div class="section clearfix">
+
+          <div class="nav">                         
+              
+          <?php print theme(array('links__system_main_menu', 'links'), $primary_links,
+            array(
+              'id' => 'main-menu',
+              'class' => 'links clearfix',
+            ),
+            array(
+              'text' => t('Main menu'),
+              'level' => 'h2',
+              'class' => 'element-invisible',
+            ));
+          ?>
+          
+          <?php print $navigation; ?>                   
+          </div> <!-- /.nav -->
+          
+        </div></div><!-- /.section, /#navigation -->
+      <?php endif; ?>
         <div id="content" class="column"><div class="section">
 
         <?php if ($mission): ?>
           <div id="mission"><?php print $mission; ?></div>
         <?php endif; ?>
+
 
         <?php if(!empty($subnavigation)): ?>
           <div id="subnav">
@@ -136,30 +160,7 @@
       </div></div><!-- /.section, /#content -->
 
 
-      <?php if ($primary_links || $navigation): ?>
-        <div id="navigation"><div class="section clearfix">
 
-          <div class="nav">                         
-              <div class="l"></div>
-              <div class="r"></div>
-              
-          <?php print theme(array('links__system_main_menu', 'links'), $primary_links,
-            array(
-              'id' => 'main-menu',
-              'class' => 'links clearfix',
-            ),
-            array(
-              'text' => t('Main menu'),
-              'level' => 'h2',
-              'class' => 'element-invisible',
-            ));
-          ?>
-          
-          <?php print $navigation; ?>                   
-          </div> <!-- /.nav -->
-          
-        </div></div><!-- /.section, /#navigation -->
-      <?php endif; ?>
      
         
       <?php print $sidebar_first; ?>
