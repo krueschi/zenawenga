@@ -1,0 +1,121 @@
+/*
+ * Here are all the overrides for the Sub-subtheme
+ */
+
+.teaser {
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+
+
+/*
+ * Node styles
+ */
+
+#content-area a:hover {
+  text-decoration: none;
+  text-shadow: #ababab 2px 2px 2px;
+}
+
+/*
+ * Views styles
+ */
+
+div.view-content h4 {
+  color: #a10f15;
+  font-size: 1.1em;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  padding: 6px 12px;
+}
+
+div.view-content h5 {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.view-ergebnisse-3platz .views-row {
+  margin-bottom: 1.5em;
+}
+
+#content-area table.views-table.cols-2 {
+  width: 99%;
+}
+
+#content-area table.views-table.cols-2 caption {
+  font-size: 1.4em;
+  color:#A10F15;
+  font-weight: bold;
+  margin: 0.5em;
+}
+
+#content-area table.views-table.cols-2 td.active,
+#content-area table.views-table.cols-2 tr.odd,
+#content-area table.views-table.cols-2 tr.even {
+  background-color: #ffffff;
+}
+
+#views_slideshow_singleframe_main_krt_slideshows-block_1,
+#views_slideshow_singleframe_main_krt_slideshows-page_1,
+#views_slideshow_singleframe_teaser_section_krt_slideshows-block_1 {
+  position: relative;
+}
+
+#slide_transparency {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 450px; /*width of the underlaying image */
+  height: 150px; /* height of the overlay */
+  background-color: #000; /* black (for a darker overlay) */
+  filter:alpha(opacity=75); /* transparency for ie */
+  opacity: 0.75; /* transparency css3 */
+  -moz-opacity:0.75; /* transparency for firefox */
+}
+
+#slide_content {
+  position: absolute;
+  top: 165px; /* adjust as needed */
+  left: 10 px;
+  max-width: 430px;
+  padding-left:10px;
+  color: #fff; /* white text for dark backgrounds */
+  font-size: 0.875em;
+}
+
+#slide_content a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.krt_slideshow_link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.view-id-krt_slideshows {
+  padding-left: 20px;
+}
+
+.view-footer a:link,
+.view-footer a:visited {
+  color: #A10F15;
+  text-decoration: none;
+  margin-left: 15px;
+}
+
+.view-footer a:hover,
+.view-footer a:active {
+  background-color: #A10F15;
+  border: 0 solid #A10F15;
+  border-radius: 3px 3px 3px 3px;
+  color: #FFFFFF;
+  padding: 0.25em;
+  text-decoration: none;
+  margin-left: 12px;
+}
+
+.krt-slideshow-moretitles li:before {
+  content: "\00BB \0020";
+}

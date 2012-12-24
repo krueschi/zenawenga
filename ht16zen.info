@@ -40,6 +40,7 @@ stylesheets[all][]   = css/og_special.css
 stylesheets[all][]   = css/comments.css
 stylesheets[all][]   = css/forms.css
 stylesheets[all][]   = css/fields.css
+stylesheets[all][]   = css/custom.css
 stylesheets[print][] = css/print.css
 ; stylesheets[handheld][] = css/mobile.css
 ; stylesheets[only screen and (max-device-width: 480px)][] = css/iphone.css
