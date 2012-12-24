@@ -45,3 +45,12 @@ tr.odd td {
 .clearfix {
   zoom: 1;
 }
+
+/*
+ * IE overrides for css3 markup
+ */
+
+#header-links #secondary-menu a:hover,
+#header-links #secondary-menu a.active {
+  color:#A10F15;
+}

@@ -119,13 +119,15 @@ li a.active {
   list-style:none;
   font-size:10px;
   line-height: 10px;
-  color:#A10F15;   
+  color:#333333;   
   text-decoration: none;
   text-transform: uppercase;
 }
 
-#header-links #secondary-menu a:hover {
+#header-links #secondary-menu a:hover,
+#header-links #secondary-menu a.active {
   text-shadow: #ababab 2px 2px 2px;
+  color:#A10F15;
 }
 
 #header-links #secondary-menu li {
