@@ -2,6 +2,12 @@
  * Here are all the overrides for the Sub-subtheme
  */
 
+h1#site-name, 
+div#site-name {
+  margin-left: 0.5em;
+  margin-top: 0.9em;
+}
+
 .teaser {
   width: 100%;
   max-width: 100%;
