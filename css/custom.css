@@ -19,10 +19,18 @@ div#site-name {
  * Node styles
  */
 
+/* Link styles */
+
 #content-area a:hover {
   text-decoration: none;
   text-shadow: #ababab 2px 2px 2px;
 }
+
+/* End link styles */
+
+/*
+ * End node styles
+ */
 
 /*
  * Views styles
@@ -73,7 +81,7 @@ div.view-content h5 {
   bottom: 0px;
   left: 0px;
   width: 450px; /*width of the underlaying image */
-  height: 150px; /* height of the overlay */
+  height: 120px; /* height of the overlay */
   background-color: #000; /* black (for a darker overlay) */
   filter:alpha(opacity=75); /* transparency for ie */
   opacity: 0.75; /* transparency css3 */
@@ -82,7 +90,7 @@ div.view-content h5 {
 
 #slide_content {
   position: absolute;
-  top: 165px; /* adjust as needed */
+  top: 195px; /* adjust as needed start from top */
   left: 10 px;
   max-width: 430px;
   padding-left:10px;

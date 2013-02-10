@@ -170,15 +170,9 @@ function my_groups_preprocess_node(&$variables) {
 function ht16zen_preprocess_node(&$variables) {
   $node = $variables['node'];
 
-  if($node->type == 'og_static_page') {
-    if($node->field_other_template[0]['value'] == 0){
-    $variables['template_file'] = 'node-og_static_page1';
-    }
-  }
-  
-  if($node->type == 'sportsnews') {
-    if($node->field_other_template[0]['value'] == 0){
-    $variables['template_file'] = 'node-sportsnews1';
+  if($node->type == 'news3') {
+    if($node->field_templateswitch[0]['value'] == 0){
+    $variables['template_file'] = 'node-news3a';
     }
   }
 }
