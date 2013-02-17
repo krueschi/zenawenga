@@ -65,7 +65,7 @@
 /**
  * Implementation of HOOK_theme().
  */
-function ht16zen_theme(&$existing, $type, $theme, $path) {
+function zenawenga_theme(&$existing, $type, $theme, $path) {
   $hooks = zen_theme($existing, $type, $theme, $path);
   // Add your theme hooks like this:
   /*
@@ -155,6 +155,7 @@ function ht16zen_preprocess_block(&$vars, $hook) {
 }
 // */
 
+/*
 function my_groups_preprocess_node(&$variables) {
     $node = $variables['node'];
     
@@ -166,8 +167,9 @@ function my_groups_preprocess_node(&$variables) {
     array_unshift($variables['template_files'], 'node-sportsnews');    
       }
 }
+*/
 
-function ht16zen_preprocess_node(&$variables) {
+function zenawenga_preprocess_node(&$variables) {
   $node = $variables['node'];
 
   if($node->type == 'news3') {

@@ -11,10 +11,10 @@ include_once './' . drupal_get_path('theme', 'zen') . '/theme-settings.php';
  * @return
  *   A form array.
  */
-function ht16zen_settings($saved_settings) {
+function zenawenga_settings($saved_settings) {
 
   // Get the default values from the .info file.
-  $defaults = zen_theme_get_default_settings('ht16zen');
+  $defaults = zen_theme_get_default_settings('zenawenga');
 
   // Merge the saved variables and their default values.
   $settings = array_merge($defaults, $saved_settings);
