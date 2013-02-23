@@ -40,6 +40,13 @@ div#site-name {
   color: #a10f15;
 }
 
+#content-area h2.title a:hover {
+  text-shadow: none;
+  color: #640b0f;
+  text-decoration: none;
+  border: none;
+}
+
 /* End link styles */
 
 /*
