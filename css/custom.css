@@ -14,6 +14,9 @@ div#site-name {
   margin: auto;
 }
 
+#content-area {
+  padding-left: 15px;
+}
 
 /*
  * Node styles
@@ -24,6 +27,12 @@ div#site-name {
 #content-area a:hover {
   text-decoration: none;
   text-shadow: #ababab 2px 2px 2px;
+}
+
+#content-area .view-footer a:hover {
+  text-decoration: none;
+  color: #efefef;
+  text-shadow: none;
 }
 
 /* End link styles */
