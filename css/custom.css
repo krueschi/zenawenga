@@ -35,6 +35,11 @@ div#site-name {
   text-shadow: none;
 }
 
+#content-area .views-field-title a:hover h2 {
+  text-shadow: none;
+  color: #a10f15;
+}
+
 /* End link styles */
 
 /*
