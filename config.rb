@@ -3,6 +3,7 @@
 http_path = "/"
 css_dir = "css"
 sass_dir = "sass"
+extensions_dir  = "sass-extensions"
 images_dir = "images"
 javascripts_dir = "js"
 
