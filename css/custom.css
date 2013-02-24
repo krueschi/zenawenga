@@ -24,26 +24,21 @@ div#site-name {
 
 /* Link styles */
 
-#content-area a:hover {
+#header-links a:hover {
   text-decoration: none;
   text-shadow: #ababab 2px 2px 2px;
 }
 
 #content-area .view-footer a:hover {
-  text-decoration: none;
   color: #efefef;
-  text-shadow: none;
 }
 
 #content-area .views-field-title a:hover h2 {
-  text-shadow: none;
   color: #a10f15;
 }
 
-#content-area h2.title a:hover {
-  text-shadow: none;
+#content-area h2.title a:hover {´
   color: #640b0f;
-  text-decoration: none;
   border: none;
 }
 
