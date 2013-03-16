@@ -3,7 +3,6 @@
  * Zen's rollover edit links for blocks.
  */
 
-
 div.block.with-block-editing {
   position: relative;
 }
@@ -22,4 +21,19 @@ div.block.with-block-editing div.edit {
 
 div.block.with-block-editing:hover div.edit {
   display: block;
+}
+
+a.block-config,
+a.block-edit,
+a.block-edit-view,
+a.block-edit-menu {
+  text-decoration: none;
+  color: #999;
+}
+
+a:hover.block-config,
+a:hover.block-edit,
+a:hover.block-edit-view,
+a:hover.block-edit-menu {
+  color: #111;
 }
