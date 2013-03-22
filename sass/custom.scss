@@ -149,3 +149,34 @@ div.view-content h5 {
 .krt-slideshow-moretitles li:before {
   content: "\00BB \0020";
 }
+
+.css3button {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #efefef;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(
+		top,
+		#a10f14 0%,
+		#7d030d);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#a10f14),
+		to(#7d030d));
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	border: 1px solid #efefef;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.7);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.7);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.7);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.4),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
