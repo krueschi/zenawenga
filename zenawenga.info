@@ -1,7 +1,7 @@
   ; The name and description of the theme used on the admin/build/themes page.
 name        = Zenawenga
 description = Zen subtheme for HT16 related projects
-version = 6.x-1.0-dev
+version = 6.x-1.0-alpha
 
   ; The screenshot used on the admin/build/themes page.
 screenshot = screenshot.png
