@@ -73,3 +73,14 @@ table.views-table {
 .view-content table.views-table h3 {
   text-align:left;
 }
+
+#content-area .tabcenter {
+  margin: auto;
+  max-width: 90%;
+    tr.odd {
+      background-color: #efefef;
+    }
+    tr.even {
+      background-color: #ffffff;
+    }
+}
