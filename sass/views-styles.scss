@@ -2,11 +2,10 @@
  * @file
  * Views Styling
  */
-
+ 
 #content-area .field-content {
   font-size: 12px;
 }
-
 
 .view-content a:link {
   color: #a10f15;
@@ -83,4 +82,21 @@ table.views-table {
     tr.even {
       background-color: #ffffff;
     }
+}
+
+#content-area .view-archive {
+  a {
+    color: #000;
+    margin: 0.25em;
+  }
+  
+  td.views-field-title a:hover,
+  td.views-field-title a:active {
+    color: #ffffff;
+    background: #a10f15;
+    text-decoration: none;
+    margin: 0;
+    padding: 0.25em;
+    border: 0px;
+  }
 }
