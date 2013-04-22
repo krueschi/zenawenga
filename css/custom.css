@@ -1,0 +1,160 @@
+/*
+ * Here are all the overrides for the Sub-subtheme
+ */
+h1#site-name,
+div#site-name {
+  margin-left: 0.5em;
+  margin-top: 0.9em; }
+
+.teaser {
+  width: 100%;
+  max-width: 100%;
+  margin: auto; }
+
+#content-area {
+  padding-left: 15px; }
+
+/*
+ * Node styles
+ */
+/* Link styles */
+#header-links a:hover {
+  text-decoration: none;
+  text-shadow: #ababab 2px 2px 2px; }
+
+#content-area .view-footer a:hover {
+  color: #efefef; }
+
+#content-area .views-field-title a:hover h2 {
+  color: #a10f15; }
+
+#content-area h2.title a:hover {
+  color: #640b0f;
+  border: none; }
+
+/* End link styles */
+/*
+ * End node styles
+ */
+/*
+ * Views styles
+ */
+div.view-content h4 {
+  color: #a10f15;
+  font-size: 1.1em;
+  background-color: #f7f7f7;
+  border: 1px solid #dddddd;
+  padding: 6px 12px; }
+
+div.view-content h5 {
+  font-weight: bold;
+  font-size: 1em; }
+
+.view-ergebnisse-3platz .views-row {
+  margin-bottom: 1.5em; }
+
+#content-area table.views-table.cols-2 {
+  width: 99%; }
+
+#content-area table.views-table.cols-2 caption {
+  font-size: 1.4em;
+  color: #A10F15;
+  font-weight: bold;
+  margin: 0.5em; }
+
+#content-area table.views-table.cols-2 td.active,
+#content-area table.views-table.cols-2 tr.odd,
+#content-area table.views-table.cols-2 tr.even {
+  background-color: #ffffff; }
+
+#views_slideshow_singleframe_main_krt_slideshows-block_1,
+#views_slideshow_singleframe_main_krt_slideshows-page_1,
+#views_slideshow_singleframe_teaser_section_krt_slideshows-block_1 {
+  position: relative; }
+
+#slide_transparency {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 450px;
+  /*width of the underlaying image */
+  height: 120px;
+  /* height of the overlay */
+  background-color: #000;
+  /* black (for a darker overlay) */
+  filter: alpha(opacity=75);
+  /* transparency for ie */
+  opacity: 0.75;
+  /* transparency css3 */
+  -moz-opacity: 0.75;
+  /* transparency for firefox */ }
+
+#slide_content {
+  position: absolute;
+  top: 195px;
+  /* adjust as needed start from top */
+  left: 10 px;
+  max-width: 430px;
+  padding-left: 10px;
+  color: #fff;
+  /* white text for dark backgrounds */
+  font-size: 0.875em; }
+
+#slide_content a:link {
+  color: #fff;
+  text-decoration: none; }
+
+.krt_slideshow_link {
+  color: #fff;
+  text-decoration: none; }
+
+.view-display-id-page_3 {
+  padding-left: 20px; }
+
+.view-footer a:link,
+.view-footer a:visited {
+  color: #A10F15;
+  text-decoration: none;
+  margin-left: 15px; }
+
+.view-footer a:hover,
+.view-footer a:active {
+  background-color: #A10F15;
+  border: 0 solid #a10f15;
+  border-radius: 3px 3px 3px 3px;
+  color: #FFFFFF;
+  padding: 0.25em;
+  text-decoration: none;
+  margin-left: 12px; }
+
+.krt-slideshow-moretitles li:before {
+  content: "\00BB \0020"; }
+
+.css3button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #efefef;
+  padding: 10px 20px;
+  background: -moz-linear-gradient(top, #a10f14 0%, #7d030d);
+  background: -webkit-gradient(linear, left top, left bottom, from(#a10f14), to(#7d030d));
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  border: 1px solid #efefef;
+  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 1px rgba(255, 255, 255, 0.7);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 1px rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5), inset 0px 0px 1px rgba(255, 255, 255, 0.7);
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4), 0px 1px 0px rgba(255, 255, 255, 0.3); }
+
+.block-menu,
+.block-user {
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: #FFFFFF;
+  background-image: none;
+  background-origin: padding-box;
+  background-position: 0 0;
+  background-repeat: repeat;
+  background-size: auto auto;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.125) inset, 0 10px 10px rgba(0, 0, 0, 0.125);
+  z-index: 1; }

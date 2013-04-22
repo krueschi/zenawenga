@@ -1,0 +1,125 @@
+/**
+ * @file
+ * Node Styling
+ *
+ * Style anything that isn't in the $content variable.
+ */
+.node-unpublished {
+  /* background-color: #fff4f4; */
+  /* Drupal core uses a #fff4f4 background */ }
+
+.node-unpublished div.unpublished,
+.comment-unpublished div.unpublished {
+  height: 0;
+  overflow: visible;
+  color: #d8d8d8;
+  font-size: 75px;
+  line-height: 1;
+  font-family: Impact, "Arial Narrow", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  word-wrap: break-word;
+  /* A very nice CSS3 property */ }
+
+/* All nodes are given a node-type-FOO class that describes the type of
+ * content that it is. If you create a new content type called
+ * "my-custom-type", it will receive a "node-type-my-custom-type" class.
+ */
+h1.title {
+  font-size: 1.4em;
+  color: #a10f15;
+  text-align: center;
+  margin-top: 0.5em; }
+
+h2.title {
+  font-size: 1.2em;
+  color: #a10f15;
+  margin-top: 1.2em; }
+
+h1.title a:hover, h2.title a:hover {
+  border-bottom: 1px dashed #a10f15; }
+
+.marker {
+  color: #c00; }
+
+.node.node-unpublished .picture,
+.comment.comment-unpublished .picture {
+  position: relative;
+  /* Otherwise floated pictures will appear below the "Unpublished" text. */ }
+
+.node .submitted {
+  font-size: 0.825em;
+  color: #999;
+  margin-bottom: 1.5em; }
+
+#content-area .submitted a:link,
+#content-area .submitted a:visited,
+#content-area .submitted a:hover {
+  text-decoration: none;
+  color: #999;
+  border: none; }
+
+#content-area .submitted a:hover {
+  border: none;
+  border-bottom: 1px dotted #999999; }
+
+.preview .node {
+  /* background-color: #ffffea; */
+  /* Drupal core uses a #ffffea background */ }
+
+h2, h3, h4, h5, h6 {
+  letter-spacing: 0px;
+  line-height: 130%;
+  margin-bottom: 8px;
+  margin-top: 5px; }
+
+h1 {
+  font-size: 1.4em;
+  color: #333333;
+  text-align: center; }
+
+h2 {
+  font-size: 1.2em;
+  color: #333333;
+  margin-top: 1.2em; }
+
+h3 {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin-top: 1.1em; }
+
+h4 {
+  font-size: 1.0em;
+  font-weight: bold;
+  font-style: italic; }
+
+p {
+  font-size: 1.0em; }
+
+.new {
+  color: #f00;
+  float: right; }
+
+.floatleft {
+  float: left;
+  margin-top: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px; }
+
+#content-area table {
+  max-width: 99%;
+  margin: 10px 5px; }
+
+#content-area th {
+  padding: 2px 4px; }
+
+table.itu-attachment-list {
+  font-size: 1em; }
+
+.hinweis {
+  background-color: #FFFBD9;
+  border-color: #FFEB00;
+  border-style: solid;
+  border: 1px;
+  padding: 6px 12px; }

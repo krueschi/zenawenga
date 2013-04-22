@@ -1,0 +1,76 @@
+/**
+ * @file
+ * Views Styling
+ */
+#content-area .field-content {
+  font-size: 12px; }
+
+.view-content a:link {
+  color: #a10f15;
+  text-decoration: none;
+  border: none; }
+
+.view-content a:hover {
+  border-bottom: 1px dashed; }
+
+div.views-admin-links a:link {
+  background: none;
+  color: #999; }
+
+div.views-admin-links a:hover {
+  background: none;
+  color: #333; }
+
+#content-area a.imagecache {
+  background: none;
+  text-decoration: none;
+  border: none; }
+
+#content-area .field-content a:hover {
+  text-decoration: none;
+  background: none;
+  border: 0 0 1px 0 dashed;
+  padding: 0; }
+
+.views-view-grid td {
+  vertical-align: top; }
+
+table.views-table {
+  font-size: 1em; }
+
+#content-area th.views-field a:hover {
+  border: none; }
+
+#content-area td.views-field,
+#content-area th.views-field {
+  padding: 0.25em 0.5em; }
+
+.view-content a:visited {
+  color: #A10F15;
+  text-decoration: none; }
+
+.view-ansprechpartner .views-row-even {
+  margin-top: 1em; }
+
+.view-content table.views-table h3 {
+  text-align: left; }
+
+#content-area .tabcenter {
+  margin: auto;
+  max-width: 90%; }
+  #content-area .tabcenter tr.odd {
+    background-color: #efefef; }
+  #content-area .tabcenter tr.even {
+    background-color: #ffffff; }
+
+#content-area .view-archive a {
+  color: #000;
+  margin: 0.25em; }
+#content-area .view-archive td.views-field-title a:hover,
+#content-area .view-archive td.views-field-title a:active {
+  color: #ffffff;
+  background: #a10f15;
+  text-decoration: none;
+  margin: 0;
+  padding: 0.25em;
+  border: 0px; }

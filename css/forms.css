@@ -1,0 +1,112 @@
+/**
+ * @file
+ * Form Styling
+ */
+.form-item,
+.form-checkboxes,
+.form-radios {
+  margin: 1em 0; }
+
+.BlockContent .form-item,
+.BlockContent #edit-tid {
+  max-width: 170px; }
+
+.form-item input.error,
+.form-item textarea.error,
+.form-item select.error {
+  border: 2px solid #cc0000; }
+
+.form-item label {
+  display: block;
+  font-weight: bold; }
+
+.form-item label.option {
+  display: inline;
+  font-weight: normal; }
+
+.form-required {
+  color: #c00; }
+
+.form-item .description {
+  font-size: 0.85em; }
+
+.form-checkboxes .form-item,
+.form-radios .form-item {
+  margin: 0.4em 0; }
+
+.container-inline div,
+.container-inline label {
+  display: inline; }
+
+/*
+ * Search (search-theme-form.tpl.php)
+ */
+#edit-search-theme-form-1-wrapper label {
+  display: none; }
+
+/*
+ * Search (search-block-form.tpl.php)
+ */
+#edit-search-block-form-1-wrapper label {
+  display: none; }
+
+/*
+ * Drupal's default login form block
+ */
+#user-login-form {
+  text-align: left;
+  /* LTR */ }
+
+/*
+ * OpenID
+ *
+ * The default styling for the OpenID login link seems to assume Garland's
+ * styling of list items.
+ */
+#user-login-form ul {
+  margin-bottom: 0;
+  /* Position OpenID's ul next to the rest of the links. */ }
+
+#user-login-form li.openid-link {
+  margin-top: 1em;
+  margin-left: -20px;
+  /* LTR */
+  /* Un-do some of the padding on the ul list. */ }
+
+#user-login-form li.user-link {
+  margin-top: 1em; }
+
+#user-login ul {
+  margin: 1em 0; }
+
+#user-login li.openid-link,
+#user-login li.user-link {
+  margin-left: -2em;
+  /* LTR */
+  /* Un-do all of the padding on the ul list. */ }
+
+/*
+ * Drupal admin tables
+ *
+ * We overrode these styles in html-elements.css, but restore them for the admin
+ * section of the site.
+ */
+form tbody {
+  border-top: 1px solid #cccccc; }
+
+form th,
+form thead th {
+  text-align: left;
+  /* LTR */
+  padding-right: 1em;
+  /* LTR */
+  border-bottom: 3px solid #cccccc; }
+
+form tbody th {
+  border-bottom: 1px solid #cccccc; }
+
+#autocomplete {
+  background-color: #ffffff; }
+
+#autocomplete-processed {
+  background-color: #ffffff; }

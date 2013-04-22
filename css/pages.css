@@ -1,0 +1,254 @@
+/**
+ * @file
+ * Page Styling
+ *
+ * Style the markup found in page.tpl.php. Also includes some styling of
+ * miscellaneous Drupal elements that appear in the $content variable, such as
+ * ul.links, .pager, .more-link, etc.
+ */
+/*
+ * Body
+ */
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Futura", Verdana, Helvetica, Arial, sans-serif;
+  font-size: 12px; }
+
+/*
+ * The skip navigation link will be completely hidden until a user tabs to the
+ * link. See http://www.webaim.org/techniques/skipnav/
+ */
+#skip-link a,
+#skip-link a:visited {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: -500px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #666;
+  color: #fff; }
+
+#skip-link a:hover,
+#skip-link a:active,
+#skip-link a:focus {
+  position: static;
+  width: 100%;
+  height: auto;
+  padding: 2px 0 3px 0; }
+
+/*
+ * Header
+ */
+#header {
+  margin: 1em auto;
+  position: relative;
+  z-index: 0; }
+
+#logo {
+  float: left;
+  /* LTR */
+  margin-left: 10px;
+  margin-top: 3px;
+  padding: 0;
+  display: block; }
+
+#logo img {
+  vertical-align: bottom; }
+
+h1#site-name,
+div#site-name {
+  display: block;
+  float: left;
+  font-size: 2em;
+  margin-top: 15px;
+  margin-left: 15px; }
+
+#site-name a:link,
+#site-name a:visited {
+  color: #A10F15;
+  text-decoration: none;
+  text-shadow: #ababab 3px 3px 3px; }
+
+#site-slogan {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: left;
+  position: absolute;
+  left: 185px;
+  bottom: 10px;
+  color: #999999; }
+
+/*
+ * Main (container for everything else)
+ */
+/*
+ * Content
+ */
+#content .section {
+  padding-left: 5px;
+  padding-right: 5px; }
+
+.breadcrumb {
+  padding-bottom: 0;
+  /* Undo system.css */ }
+
+.breadcrumb a {
+  color: #999;
+  border: none;
+  text-decoration: none; }
+
+h1.title,
+h2.title,
+h3.title {
+  margin: 0; }
+
+tr.even {
+  /* background-color: #eee; */
+  /* Drupal core uses a #eee background */ }
+
+tr.odd {
+  /* background-color: #eee; */
+  /* Drupal core uses a #eee background */ }
+
+div.warning,
+tr.warning {
+  /* border: 1px solid #f0c020; */
+  /* Drupal core uses: 1px solid #f0c020 */ }
+
+.error {
+  /* color: #e55; */
+  /* Drupal core uses a #e55 background */ }
+
+.warning {
+  /* color: #e09010; */
+  /* Drupal core uses a #e09010 background */ }
+
+.help {
+  margin: 1em 0; }
+
+.more-help-link {
+  font-size: 0.85em;
+  text-align: right; }
+
+ul.links {
+  margin: 1em 0;
+  padding: 0; }
+
+ul.links.inline {
+  margin: 0;
+  display: inline; }
+
+ul.links li {
+  display: inline;
+  list-style-type: none;
+  padding: 0 0.5em; }
+
+.pager {
+  clear: both;
+  margin: 1em 0;
+  text-align: center; }
+
+.pager a,
+.pager strong.pager-current {
+  padding: 0.5em; }
+
+.feed-icons {
+  margin: 1em 0; }
+
+.more-link {
+  text-align: right;
+  /* LTR */ }
+
+/*
+ * First sidebar (on left in LTR languages, on right in RTL)
+ *
+ * Remember to NOT add padding or margin to your .region-sidebar-first
+ * (see the layout.css file.)
+ */
+/*
+ * Second sidebar (on right in LTR languages, on left in RTL)
+ *
+ * Remember to NOT add padding or margin to your .region-sidebar-second
+ * (see the layout.css file.)
+ */
+/*
+ * Footer
+ */
+/*
+ * Closure
+ */
+/*
+ * Drupal boxes
+ *
+ * Wrapper for Comment form, Comment viewing options, Menu admin, and
+ * Search results.
+ */
+/*
+ * Markup free clearing (See: http://www.positioniseverything.net/easyclearing.html )
+ */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+/**
+ * Hide elements from all users.
+ *
+ * Used for elements which should not be immediately displayed to any user. An
+ * example would be a collapsible fieldset that will be expanded with a click
+ * from a user. The effect of this class can be toggled with the jQuery show()
+ * and hide() functions.
+ */
+.element-hidden {
+  display: none; }
+
+/**
+ * Hide elements visually, but keep them available for screen-readers.
+ *
+ * Used for information required for screen-reader users to understand and use
+ * the site where visual display is undesirable. Information provided in this
+ * manner should be kept concise, to avoid unnecessary burden on the user. Must
+ * not be used for focusable elements (such as links and form elements) as this
+ * causes issues for keyboard only or voice recognition users. "!important" is
+ * used to prevent unintentional overrides.
+ */
+.element-invisible {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px); }
+
+#content-area a:link,
+#content-area a:visited,
+#content-area a:hover,
+#content-area a:active {
+  text-decoration: none;
+  border: none;
+  color: #a10f15; }
+
+#content-area a:hover {
+  border-bottom: 1px dashed #a10f15; }
+
+#content-area .views-admin-links a {
+  text-decoration: none;
+  color: #999; }
+
+#content-area .views-admin-links a:hover {
+  border-bottom: 1px dotted #999999; }
+
+#edit-body-wrapper a,
+#edit-body-wrapper a:link,
+#edit-body-wrapper a:visited,
+#edit-body-wrapper a:hover,
+#edit-body-wrapper a:focus,
+#edit-body-wrapper a:active {
+  text-decoration: none;
+  border: none;
+  color: #000; }
