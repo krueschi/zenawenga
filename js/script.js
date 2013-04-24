@@ -1,56 +1,19 @@
-// $Id: script.js,v 1.1.2.1 2009/07/06 08:03:14 agileware Exp $
+/**
+ * @file
+ * A JavaScript file for the theme.
+ *
+ * In order for this JavaScript to be loaded on pages, see the instructions in
+ * the README.txt next to this file.
+ */
 
-/* begin Page */
-
-/* Generated with Artisteer version 2.1.0.16090, file checksum is 0287F487. */
-
-(function () {
-  // fix ie blinking
-  var m = document.uniqueID && document.compatMode && !window.XMLHttpRequest && document.execCommand;
-  try{ if(!!m) { m("BackgroundImageCache", false, true); } }
-  catch(oh){};
-})();
-
-function xGetElementsByClassName(clsName, parentEle, tagName) {
-  var elements = null;
-  var found = [];
-  var slash = String.fromCharCode(92);
-  var re = new RegExp(slash + "b" + clsName + slash + "b");
-  if (!parentEle) parentEle = document;
-  if (!tagName) tagName = '*';
-  elements = parentEle.getElementsByTagName(tagName);
-  if (elements) {
-    for (var i = 0; i < elements.length; ++i) {
-      if (elements[i].className.search(re) != -1) {
-        found[found.length] = elements[i];
-      }
-    }
-  }
-  return found;
-}
-
-var styleUrlCached = null;
-function GetStyleUrl() {
-  if (null == styleUrlCached) {
-    var ns;
-    styleUrlCached = '';
-    ns = document.getElementsByTagName('link');
-    for (var i = 0; i < ns.length; i++) {
-      var l = ns[i];
-      if (l.href && /style\.css(\?.*)?$/.test(l.href)){
-        return styleUrlCached = l.href.replace(/style\.css(\?.*)?$/,'');
-      }
-    }
-    
-    ns = document.getElementsByTagName('style');
-    for (var i = 0; i < ns.length; i++) {
-      var matches = new RegExp('import\\s+"([^"]+\\/)style\\.css"').exec(ns[i].innerHTML);
-      if (null != matches && matches.length > 0)
-        return styleUrlCached = matches[1];
-    }
-  }
-  return styleUrlCached;
-}
+// JavaScript should be made compatible with libraries other than jQuery by
+// wrapping it with an "anonymous closure". See:
+// - http://drupal.org/node/1446420
+// - http://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth
+(function ($, Drupal, window, document, undefined) {
 
 
-/* end Page */
+// Place your code here.
+
+
+})(jQuery, Drupal, this, this.document);
