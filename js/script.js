@@ -177,63 +177,6 @@ artLoadEvent.add(artButtonsSetupJsHover);
 
 /* end Page */
 
-/* begin Menu */
-function Insert_Separators()
-{
-  var menus = xGetElementsByClassName("artmenu", document);
-  for (var i = 0; i < menus.length; i++) {
-    var menu = menus[i];
-    var childs = menu.childNodes;
-    var listItems = [];
-    for (var j = 0; j < childs.length; j++){
-      var el = childs[j];
-      if (String(el.tagName).toLowerCase() == "li")listItems.push(el);
-    }
-    for (var j = 0; j < listItems.length - 1; j++){
-      var span = document.createElement('span');
-      span.className = 'separator';
-      var li = document.createElement('li');
-      li.appendChild(span);
-      listItems[j].parentNode.insertBefore(li, listItems[j].nextSibling);
-    }
-  }
-}
-artLoadEvent.add(Insert_Separators);
-
-function Menu_IE6Setup() {
-  var isIE6 = navigator.userAgent.toLowerCase().indexOf("msie") != -1 
-    && navigator.userAgent.toLowerCase().indexOf("msie 7") == -1;
-  if (!isIE6) return;
-  var aTmp2, i, j, oLI, aUL, aA;
-  var aTmp = xGetElementsByClassName("artmenu", document, "ul");
-  for (i=0;i<aTmp.length;i++) {
-    aTmp2 = aTmp[i].getElementsByTagName("li");
-    for (j=0;j<aTmp2.length;j++) {
-      oLI = aTmp2[j];
-      aUL = oLI.getElementsByTagName("ul");
-      if (aUL && aUL.length) {
-        oLI.UL = aUL[0];
-        aA = oLI.getElementsByTagName("a");
-        if (aA && aA.length)
-        	oLI.A = aA[0];
-         oLI.onmouseenter = function() {
-         	this.className += " artmenuhover";
-         	this.UL.className += " artmenuhoverUL";
-         	if (this.A) this.A.className += " artmenuhoverA";
-         };
-        oLI.onmouseleave = function() {
-          this.className = this.className.replace(/artmenuhover/,"");
-          this.UL.className = this.UL.className.replace(/artmenuhoverUL/,"");
-          if (this.A) this.A.className = this.A.className.replace(/artmenuhoverA/, "");
-        };
-      }
-    }
-  }
-}
-artLoadEvent.add(Menu_IE6Setup);
-/* end Menu */
-
-
 
 artLoadEvent.add(function() {
     // select all tables with table class
