@@ -8,9 +8,13 @@
 // This base partial is organized in this way:
 // - First we set any shared Sass variables.
 // - Next we import Compass plug-ins (Sass mixin libraries).
-// - Last we import a _custom.scss partial that includes our custom mixins.
+// - Last we define our custom mixins for this theme.
 //
 
+
+// =============================================================================
+// Variables
+// =============================================================================
 
 //
 // Legacy IE support
@@ -18,7 +22,15 @@
 // These variables are used by many mixins to add additional CSS to support
 // specific versions of IE or specific vendor prefixes.
 //
-// To turn on support for IE6 or IE7, set those variables to true.
+// IE6-7 don't support box-sizing: border-box. We can fix this in 1 of 3 ways:
+// - Drop support for IE 6/7. :-) Set $legacy-support-for-ie6
+//   and $legacy-support-for-ie7 to false.
+// - (Preferred) Install the box-sizing polyfill and set the variable below to
+//   the absolute path URL to the boxsizing.htc file.
+//   @see https://github.com/Schepp/box-sizing-polyfill
+//   $box-sizing-polyfill-path: "/path/to/boxsizing.htc";
+// - Use the same CSS unit for grid and gutter width in resonsive-sidebars.scss
+//   (use px for both or use % for both) and set the box-sizing variable to content-box.
 //
 // Zen does not require special handling for IE8 or later. But Compass uses that
 // variable for a couple edge cases. We include it for completeness sake. See
@@ -45,7 +57,7 @@ $h2-font-size: 1.5  * $base-font-size;
 $h3-font-size: 1.17 * $base-font-size;
 $h4-font-size: 1    * $base-font-size;
 $h5-font-size: 0.83 * $base-font-size;
-$h6-font-size: 0.75 * $base-font-size;
+$h6-font-size: 0.67 * $base-font-size;
 
 // The following font family declarations are based on the Microsoft core web
 // fonts which are common fonts available on most computer systems. The DejaVu
@@ -85,10 +97,17 @@ $font-monospace:   $courier;
 // The amount lists, blockquotes and comments are indented.
 $indent-amount: 30px;
 
+// The height of the navigation container.
+$nav-height: 3em;
 
-//
+// Tab styling.
+$tabs-container-bg: #fff;
+$tabs-border: #bbb;
+
+
+// =============================================================================
 // Partials to be shared with all .scss files.
-//
+// =============================================================================
 
 @import "compass/support";  // Add Compass' IE and vendor prefix support variables.
 @import "compass/utilities/general/clearfix"; // Better than Drupal's clearfix.
@@ -97,4 +116,10 @@ $indent-amount: 30px;
 @import "compass/typography/vertical_rhythm"; // Helps set up a vertical rhythm.
 @import "zen";              // Add the Zen Grids responsive layout mixins.
 
-@import "custom";           // Import our custom mixins last.
+
+// =============================================================================
+// Custom sass mixins
+// =============================================================================
+
+// Define the custom mixins for your project here.
+// http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#defining_a_mixin
