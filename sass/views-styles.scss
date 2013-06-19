@@ -90,6 +90,14 @@ table.views-table {
     margin: 0.25em;
   }
   
+  th.views-field-created,
+  td.views-field-created {
+    background-color: transparent;
+    height: 1.4em;
+    padding-right: 10px;
+    width: 135px;
+  }
+  
   td.views-field-title a:hover,
   td.views-field-title a:active {
     color: #ffffff;
