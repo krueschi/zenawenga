@@ -1,15 +1,1 @@
-/*
- * css for organic group post other than standard
- */
-/*
- * nodetype Sportzeit
- */
-.node-type-sportzeit .field-field-weekday,
-.node-type-sportzeit .field-field-beginn,
-.node-type-sportzeit .field-field-ende {
-  float: left;
-  margin-right: 5px; }
-
-.node-type-sportzeit .content p {
-  clear: both;
-  margin-top: 2em; }
+.node-type-sportzeit .field-field-weekday,.node-type-sportzeit .field-field-beginn,.node-type-sportzeit .field-field-ende{float:left;margin-right:5px}.node-type-sportzeit .content p{clear:both;margin-top:2em}
