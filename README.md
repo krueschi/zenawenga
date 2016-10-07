@@ -1,5 +1,6 @@
 # zenawenga
-Drupal theme for HT16
+
+Deprecated Drupal theme for HT16
 
 As this version of the zen subtheme is only for Drupal 6 / zen 2.x it is discontinued and will no longer be updated.
 
